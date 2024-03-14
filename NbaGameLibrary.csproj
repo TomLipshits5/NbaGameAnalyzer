@@ -13,8 +13,8 @@
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Repository>
       <Type>git</Type>
-      <Url>https://github.com/TomLipshits5/NbaGameAnalyzer</Url>
     </Repository>
+    <SourceRepository>https://github.com/TomLipshits5/NbaGameAnalyzer</SourceRepository>
   </PropertyGroup>
 
   <ItemGroup>
