@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Fetch And Parse Game Data For NBA Games")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d5d7d12ddde81fc69e3c06d9c1018ccbe8ca60c")]
 [assembly: System.Reflection.AssemblyProductAttribute("NbaGameAnalyzer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NbaGameLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
