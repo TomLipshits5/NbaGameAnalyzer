@@ -4,17 +4,16 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>TomL.NbaGameAnalyzer</PackageId>
-    <Version>1.0.0</Version>
+    <PackageId>NbaGameAnalyzer</PackageId>
+    <Version>1.0.1</Version>
     <Author>TomLipshits</Author>
     <Description>Fetch And Parse Game Data For NBA Games</Description>
     <Product>NbaGameAnalyzer</Product>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <Repository>
-      <Type>git</Type>
-    </Repository>
-    <SourceRepository>https://github.com/TomLipshits5/NbaGameAnalyzer</SourceRepository>
+    <PackageProjectUrl>https://github.com/TomLipshits5/NbaGameAnalyzer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TomLipshits5/NbaGameAnalyzer</RepositoryUrl>
+    <Copyright>Copyright (c) Tom Lipshits 2024</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

@@ -5,10 +5,10 @@
   },
   "projects": {
     "/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/NbaGameLibrary.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "restore": {
         "projectUniqueName": "/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/NbaGameLibrary.csproj",
-        "projectName": "TomL.NbaGameAnalyzer",
+        "projectName": "NbaGameAnalyzer",
         "projectPath": "/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/NbaGameLibrary.csproj",
         "packagesPath": "/Users/tlipshits/.nuget/packages/",
         "outputPath": "/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/",
