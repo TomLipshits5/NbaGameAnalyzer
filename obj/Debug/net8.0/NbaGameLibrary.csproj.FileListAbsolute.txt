@@ -10,3 +10,4 @@
 /Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.pdb
 /Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/ref/NbaGameLibrary.dll
 /Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.csproj.AssemblyReference.cache
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.sourcelink.json

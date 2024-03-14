@@ -63,7 +63,7 @@
     "/Users/tlipshits/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "restore": {
       "projectUniqueName": "/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/NbaGameLibrary.csproj",
       "projectName": "NbaGameAnalyzer",

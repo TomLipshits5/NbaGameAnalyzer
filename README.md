@@ -27,7 +27,7 @@ class Program
         List<GameAction> playerActions = game.GetAllPlayerActionsByName(playerName);
         foreach(GameAction action in playerActions)
         {
-            Console.WriteLine(action.GetActionType);
+            Console.WriteLine(action.GetActionType());
         }
     }
 }
