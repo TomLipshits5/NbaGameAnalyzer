@@ -8,7 +8,7 @@
     <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
     <readme>README.md</readme>
     <description>Fetch And Parse Game Data For NBA Games</description>
-    <repository type="git" commit="8d5d7d12ddde81fc69e3c06d9c1018ccbe8ca60c" />
+    <repository type="git" commit="9dc52cb42e27287312060936b9d513d10e5b7de5" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="NUnit" version="4.1.0" exclude="Build,Analyzers" />
