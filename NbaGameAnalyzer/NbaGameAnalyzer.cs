@@ -26,23 +26,36 @@ namespace NbaGameLibrary
     }
 
 
-
-
+    /// <summary>
+    /// Class that analyzes NBA games and provides data about players and their actions.
+    /// </summary>
     public class NbaGameAnalyzer : IGameAnalyzer
     {
         //Class Fields
-        private readonly string gameId;
+        private string gameId;
         private Dictionary<TeamDomesticity, List<Player>> DomesticityToPlayersMap = [];
+        public const string BaseNbaUrlFormat = "https://cdn.nba.com/static/json/liveData/playbyplay/playbyplay_{0}.json";
 
         //Public Methods
-        public NbaGameAnalyzer(string gameId = "0022000180")
+
+        /// <summary>
+        /// Creates a new instance of the NbaGameAnalyzer class and fetches game data asynchronously.
+        /// </summary>
+        /// <param name="gameId">The ID of the NBA game to analyze.</param>
+        /// <returns>A new instance of the NbaGameAnalyzer class.</returns>        
+        public async Task<NbaGameAnalyzer> CreateAsync(string gameId = "0022000180")
         {
             this.gameId = gameId;
-            string rawData = fetchGameData(this.gameId).GetAwaiter().GetResult();
+            string rawData = await fetchGameData(this.gameId);
             parseRawData(rawData);
+            return this;
         }
 
-
+        /// <summary>
+        /// Returns a list of all game actions for a given player.
+        /// </summary>
+        /// <param name="playerName">The name of the player.</param>
+        /// <returns>A list of game actions for the player.</returns>
         public List<GameAction> GetAllPlayerActionsByName(string playersName)
         {   
             List<GameAction>? output = [];
@@ -64,6 +77,10 @@ namespace NbaGameLibrary
             return output;
         }
 
+        /// <summary>
+        /// Returns a dictionary of all players' names on both teams.
+        /// </summary>
+        /// <returns>A dictionary with player names as keys and their team as values.</returns>
         public Dictionary<TeamDomesticity, List<string>> GetAllPlayersNames()
         {
             Dictionary<TeamDomesticity, List<string>> output = [];
@@ -77,11 +94,15 @@ namespace NbaGameLibrary
         }
 
         //Private Methods:
+
+        /// <summary>
+        /// Fatches json play by play data of the game asynchronously.
+        /// </summary>
+        /// <returns>A json string of the game data.</returns>
         private static async Task<string> fetchGameData(string GameId)
         {
-            HttpClient client = new HttpClient();
-            string url = string.Format("https://cdn.nba.com/static/json/liveData/playbyplay/playbyplay_{0}.json", GameId);
-
+            HttpClient client = new HttpClient(); 
+            string url = string.Format(BaseNbaUrlFormat, GameId);
 
             for(int attempt = 0; attempt < 3; attempt++)
             {
@@ -105,6 +126,9 @@ namespace NbaGameLibrary
             return "";
         }
 
+        /// <summary>
+        /// Serielize the data and parse into Player and GameAction classes, and fill assign them to the DomesticityToPlayersMap.
+        /// </summary>
         private void parseRawData(string gameInfo)
         {
             this.DomesticityToPlayersMap[TeamDomesticity.home] = [];
@@ -129,6 +153,9 @@ namespace NbaGameLibrary
 
         }
 
+        /// <summary>
+        /// Finds the player that match the personId in DomesticityToPlayersMap and assign the action to him, If no player is found one will be created.
+        /// </summary>
         private void addActionToPlayer(int personId, string playerNameI, string teamTricode, string homeTeam, GameAction action)
         {
             bool home = teamTricode == homeTeam;
@@ -148,6 +175,10 @@ namespace NbaGameLibrary
             player.AddPlayerAction(action);
         }
 
+        /// <summary>
+        /// Convert durationString to a TimeSpan object (String format: P00M00S).
+        /// </summary>
+        /// <returns>A json string of the game data.</returns>
         private TimeSpan convertClockToTimeSpan(string durationString)
         {
             if (!durationString.StartsWith("PT"))
@@ -186,6 +217,10 @@ namespace NbaGameLibrary
         }
 
 
+        /// <summary>
+        /// Detect which team is home team based on first home score change in action.
+        /// </summary>
+        /// <returns>A three letter representation of the home team name.</returns>
         private string getHomeTeamName(List<RawGameAction> actions)
         {
             return actions.Where(action => action.scoreHome != null && action.scoreHome != "0").First<RawGameAction>().teamTricode;
@@ -196,6 +231,10 @@ namespace NbaGameLibrary
 
 
     //Helper Classes
+
+    /// <summary>
+    /// Class representing a player in an NBA game.
+    /// </summary>   
     public class Player(int playerId, string name, string teamName, bool home)
     {
         private readonly int playerId = playerId;
@@ -231,7 +270,9 @@ namespace NbaGameLibrary
     }
 
 
-
+    /// <summary>
+    /// Class representing an action taken by a player in an NBA game.
+    /// </summary>
     public class GameAction
     {
         private readonly int actionNumber;

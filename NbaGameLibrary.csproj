@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>NbaGameAnalyzer</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Author>TomLipshits</Author>
     <Description>Fetch And Parse Game Data For NBA Games</Description>
     <Product>NbaGameAnalyzer</Product>

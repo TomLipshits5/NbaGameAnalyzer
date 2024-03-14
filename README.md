@@ -13,24 +13,41 @@ namespace NbaGameLibrary
 ``` 
 The class analyzes NBA games by fetching and parsing play-by-play data from the NBA server and organizing the data into players and their actions.
 
-## Usecase Example
+## Useage Example
 ```c#
 using NbaGameLibrary;
 class Program
 {
     static void Main(string[] args)
     {
-        NbaGameAnalyzer game = new NbaGameAnalyzer();
+        NbaGameAnalyzer game =  new NbaGameAnalyzer().CreateAsync().GetAwaiter().GetResult();
         Dictionary<TeamDomesticity, List<string>> allPlayers = game.GetAllPlayersNames();
         List<string> homeTeam = allPlayers[TeamDomesticity.home];
         string playerName = homeTeam[0];
         List<GameAction> playerActions = game.GetAllPlayerActionsByName(playerName);
+        Console.WriteLine(string.Format("This are the actions that {0}, did during the game:", playerName));
         foreach(GameAction action in playerActions)
         {
             Console.WriteLine(action.GetActionType());
         }
     }
 }
+```
+### Output
+```
+This are the actions that G. Williams, did during the game:
+jumpball
+2pt
+substitution
+substitution
+substitution
+substitution
+2pt
+rebound
+foul
+3pt
+rebound
+substitution
 ```
 
 ## Enums
