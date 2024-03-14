@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TomL.NbaGameAnalyzer</id>
+    <version>1.0.0</version>
+    <authors>NbaGameLibrary</authors>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <description>Fetch And Parse Game Data For NBA Games</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="NUnit" version="4.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/bin/Release/net8.0/NbaGameLibrary.dll" target="lib/net8.0/NbaGameLibrary.dll" />
+    <file src="/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/README.md" target="/README.md" />
+    <file src="/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/LICENSE.txt" target="/LICENSE.txt" />
+  </files>
+</package>

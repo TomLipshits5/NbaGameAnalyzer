@@ -1,0 +1,12 @@
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/bin/Debug/net8.0/NbaGameLibrary.deps.json
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/bin/Debug/net8.0/NbaGameLibrary.dll
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/bin/Debug/net8.0/NbaGameLibrary.pdb
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.AssemblyInfoInputs.cache
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.AssemblyInfo.cs
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.csproj.CoreCompileInputs.cache
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.dll
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/refint/NbaGameLibrary.dll
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.pdb
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/ref/NbaGameLibrary.dll
+/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/obj/Debug/net8.0/NbaGameLibrary.csproj.AssemblyReference.cache

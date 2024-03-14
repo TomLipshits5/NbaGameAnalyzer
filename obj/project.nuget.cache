@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2zwePJNLQvWrhh+o60T4ib3mkmnTS1rlkv+AERfJsECPdnD/fYI8f8RFSXXB4unNGBYpfHz3MZIifAFE9YKxXw==",
+  "success": true,
+  "projectFilePath": "/Users/tlipshits/Desktop/Study/C#/ClassLibraryProjects/NbaGameLibrary/NbaGameLibrary.csproj",
+  "expectedPackageFiles": [
+    "/Users/tlipshits/.nuget/packages/nunit/4.1.0/nunit.4.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
